@@ -12,15 +12,12 @@ class Result_View_ControllerViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var settingLabel: UILabel!
 
-    var result = "0.0"
-    var tip = 0
-    var split = 2
-    var billTotal = 0.0
+    var calculatorBrain = CalculatorBrain()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        totalLabel.text = result
-        settingLabel.text = "Split \(billTotal) between \(split) people, with \(tip)% tip."
+        totalLabel.text = calculatorBrain.getResult()
+        settingLabel.text = calculatorBrain.getSettingLabelText()
     }
 
     @IBAction func recalculatePressed(_ sender: UIButton) {
@@ -29,10 +26,7 @@ class Result_View_ControllerViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToBack" {
-            let destinationVC = segue.destination as! CalculatorViewController
-            destinationVC.tip = 0.0
-            destinationVC.numberOfPeople = 2
-            destinationVC.billTotal = 0.0
+            calculatorBrain.getDestinationAsCalculatorVC(segue)
         }
     }
 }
