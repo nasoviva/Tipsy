@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Blue Green Watercolor Linktree Background.png",
+      "filename" : "backgroung.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Blue Green Watercolor Linktree Background@2x.png",
+      "filename" : "backgroung@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Blue Green Watercolor Linktree Background@3x.png",
+      "filename" : "backgroung@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
