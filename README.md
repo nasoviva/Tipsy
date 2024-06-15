@@ -2,7 +2,7 @@
   <h1><b>Tipsy</b></h1>
 </div>
 <br>
-<p align="center">Tipsy is a mobile app that splits the bill among friends at a restaurant, taking into account tips.</p>
+<p align="center">Tipsy is a mobile app that splits the bill among friends at a restaurant, taking into account tips.<br> Learning to use segues and navigation for multi-screen apps.</p>
 <br>
 <div align="center">
     <img src="https://github.com/nasoviva/Tipsy/blob/main/Main_1.png" alt="Описание изображения" width="200"/>
